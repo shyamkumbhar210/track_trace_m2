@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DigiTathya MVP Prototype
 
-## Getting Started
+DigiTathya is a Vite + React + TypeScript static frontend prototype for CropShield QR lifecycle intelligence and track-and-trace workflows. All data is mock and client-side.
 
-First, run the development server:
+## Stack
+
+- Vite
+- React
+- TypeScript
+- React Router
+- Tailwind CSS
+
+## Setup
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the local Vite URL printed in the terminal.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Route Map
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/login`
+- `/setup`
+- `/app/dashboard`
+- `/app/brand`
+- `/app/products`
+- `/app/products/:skuId`
+- `/app/products/import`
+- `/app/qr/generate`
+- `/app/qr/activation`
+- `/app/qr/inventory`
+- `/app/qr/history`
+- `/app/track`
+- `/app/track/:serial`
+- `/app/dispatch`
+- `/app/dispatch/new`
+- `/app/dispatch/:id`
+- `/app/returns`
+- `/app/recalls`
+- `/app/recalls/new`
+- `/app/recalls/:id`
+- `/app/expiry`
+- `/app/partners`
+- `/app/partners/approvals`
+- `/app/partners/new`
+- `/app/partners/import`
+- `/app/partners/contract-manufacturers`
+- `/app/partners/:id`
+- `/app/alerts`
+- `/app/analytics`
+- `/app/audit`
+- `/app/settings`
+- `/app/users`
+- `/search`
 
-## Learn More
+## Demo Control
 
-To learn more about Next.js, take a look at the following resources:
+A floating Demo Control appears on every app screen. Use it to switch roles instantly and verify permissions for generation, approval, activation, dispatch, returns, recalls, settings, users, and master data.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Source of truth is `src/`.
+- Visual theme tokens and shared component styles should not be restyled.
